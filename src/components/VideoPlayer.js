@@ -38,7 +38,7 @@ const VideoPlayer = ({ onVideoEnd }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'black',
+    backgroundColor: 'pink',
     justifyContent: 'center',
     alignItems: 'center',
   },

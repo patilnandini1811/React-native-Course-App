@@ -48,6 +48,7 @@ const FilterComponent = ({ courses, selectedFilter, onFilterChange }) => {
 const styles = StyleSheet.create({
   container: {
     marginTop: 20,
+    backgroundColor:'pink',
   },
   backButton: {
     flexDirection: 'row',

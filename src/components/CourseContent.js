@@ -56,7 +56,7 @@ const CourseContent = () => {
 const styles = StyleSheet.create({
   container: {
     flexGrow: 1,
-    backgroundColor: '#f8f8f8',
+    backgroundColor: 'pink',
     padding: 10,
     borderRadius: 10,
     marginBottom: 20,
