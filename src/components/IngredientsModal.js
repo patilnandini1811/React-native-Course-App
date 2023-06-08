@@ -4,7 +4,7 @@ import { View, Text, StyleSheet } from 'react-native';
 const IngredientsModal = () => {
   return (
     <View style={styles.container}>
-      {/* Your ingredient list with alternative colors styling */}
+      
       <Text style={[styles.ingredientText, styles.evenIngredient]}>2 Tbsp oil</Text>
       <Text style={[ styles.ingredientText, styles.oddIngredient ]}>1/4 tsp hing</Text>
       <Text style={[ styles.ingredientText, styles.evenIngredient ]}>1 tsp mustard seeds</Text>

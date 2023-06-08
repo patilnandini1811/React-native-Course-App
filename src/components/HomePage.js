@@ -1,12 +1,15 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button, Image, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View,  Image, TouchableOpacity } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
-const HomePage = ({ navigation }) =>
-{
-  const handleViewCourses = () =>
-  {
+const HomePage = () => {
+  const navigation = useNavigation();
+
+  const handleViewCourses = () => {
     navigation.navigate('CoursesPage');
-  }
+  };
+
+
   return (
     <View style={styles.container}>
       <Image source={require('../../assets/img/icon3.jpg')} style={styles.image} />
@@ -14,11 +17,10 @@ const HomePage = ({ navigation }) =>
       <TouchableOpacity style={styles.button} onPress={handleViewCourses}>
         <Text style={styles.buttonText}>View Courses</Text>
       </TouchableOpacity>
-
-
     </View>
   );
 };
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -38,10 +40,10 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   image: {
-    width: 200,  // Adjust the width as needed
-    height: 200, // Adjust the height as needed
+    width: 200,
+    height: 200,
     marginBottom: 20,
-    borderRadius:10,
+    borderRadius: 10,
   },
   button: {
     backgroundColor: 'white',
@@ -53,8 +55,11 @@ const styles = StyleSheet.create({
     color: 'black',
     fontSize: 16,
     fontWeight: 'bold',
-    
   },
 });
 
 export default HomePage;
+
+
+
+
